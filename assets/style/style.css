@@ -9,6 +9,21 @@ html,body{
     background-color: #162831;
 }
 
+.up{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    border: solid 1px black;
+    border-radius: 50px;
+}
+.up:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.up:active{
+    background-color: greenyellow;
+}
+
 header{
     width: 1298px;
     height: 60px;
