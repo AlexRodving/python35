@@ -48,6 +48,10 @@ header{
 
 main{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    color: #FFF;
 
     & .index_box1{
         width: 1296px;
@@ -59,12 +63,66 @@ main{
         justify-content: center;
         align-items: center;
         gap: 20px;
-        color: #FFF;
 
         & h1{
             text-align: center;
         }
     }
 
+    & .index_box2{
+        width: 1296px;
+        height: 699px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        & h1{
+            text-align: center;
+        }
+
+        & .index_box2_cont{
+            display: flex;
+            gap: 24px;
+
+            & .box1{
+                width: 416px;
+                height: 540px;
+                background-image: url('../img/index_box2_1.png');
+                display: flex;
+                align-items: flex-end;
+                
+                & p{
+                    margin: 50px 50px;
+                    font-size: 24px;
+                }
+            }
+
+            & .box2{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                & .box2_1{
+                    display: flex;
+                    gap: 24px;
+
+                    & .box2_cont{
+                        width: 416px;
+                        height: 258px;
+                        display: flex;
+                        align-items: flex-end;
+                        background-image: url('../img/index_box2_2.png');
+
+                        & p{
+                            width: 336px;
+                            margin: 40px 30px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
