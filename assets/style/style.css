@@ -32,9 +32,22 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    & img{
+    /* & img{
         width: 60px;
         height: 60px;
+    } */
+
+    & .header_logo{
+        width: 60px;
+        height: 60px;
+        position: relative;
+
+        & .header_logoW{
+            position: absolute;
+            left: 14px;
+            top: 13px;
+            transition: all 0.5s;
+        }
     }
 
     & ul{
@@ -58,6 +71,12 @@ header{
         font-size: 13px;
         border-radius: 5px;
         color: #FFF;
+        transition: all 1s linear;
+    }
+
+    & button:hover{
+        background-color: red;
+        color: black;
     }
 }
 
@@ -139,5 +158,14 @@ main{
             }
         }
     }
+}
 
+footer{
+
+    display: flex;
+    justify-content: center;
+
+    & .index_ft_box1{
+        box-shadow: 0 0 10px white;
+    }
 }
